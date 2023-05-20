@@ -1,0 +1,36 @@
+@use './components/index.scss';
+@use './variables/index.scss' as var;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Blinker;
+    src: url('/font/Blinker/Blinker-Regular.ttf');
+}
+
+html {
+    height: 100%;
+    font-family: Blinker;
+}
+
+body {
+    background-color: var.$primary-color;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+/*
+=============================================
+CENTRALIZA ELEMENTOS NA VERTICAL E HORIZONTAL
+=============================================
+*/
+.d-flex {
+    display: flex;
+}

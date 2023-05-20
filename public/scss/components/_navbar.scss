@@ -1,0 +1,49 @@
+@use '../variables/index.scss' as var;
+
+#header {
+    background-color: var.$secondary-color-light;
+
+    .nav {
+        display: flex;
+        gap: 1rem;
+
+        &__brand {
+            color: var.$text-color;
+            align-self: center;
+        }
+
+        &__form {
+            flex-basis: 100%;
+            display: flex;
+
+            .input {
+                width: 100%;
+                padding: 1rem;
+                border: transparent;
+                border-radius: 10px 0 0 10px;
+                outline: none;
+                background-color: var.$input-color;
+                color: var.$text-color;
+                font-size: 1.2rem;
+                transition: box-shadow .3s ease-in-out;
+
+                &:focus {
+                    box-shadow: 0px 0px 0px 1px var.$text-color;
+                }
+
+                &::placeholder {
+                    color: var.$text-color;
+                }
+            }
+
+            .btn {
+                color: var.$text-color;
+                background-color: var.$input-color;
+                border: transparent;
+                padding: 0 1rem;
+                border-radius: 0 10px 10px 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

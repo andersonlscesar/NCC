@@ -1,0 +1,76 @@
+#header {
+  background-color: rgb(30, 31, 35);
+}
+#header .nav {
+  display: flex;
+  gap: 1rem;
+}
+#header .nav__brand {
+  color: #C0CDFA;
+  align-self: center;
+}
+#header .nav__form {
+  flex-basis: 100%;
+  display: flex;
+}
+#header .nav__form .input {
+  width: 100%;
+  padding: 1rem;
+  border: transparent;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  background-color: #020510;
+  color: #C0CDFA;
+  font-size: 1.2rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#header .nav__form .input:focus {
+  box-shadow: 0px 0px 0px 1px #C0CDFA;
+}
+#header .nav__form .input::placeholder {
+  color: #C0CDFA;
+}
+#header .nav__form .btn {
+  color: #C0CDFA;
+  background-color: #020510;
+  border: transparent;
+  padding: 0 1rem;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Blinker;
+  src: url("/font/Blinker/Blinker-Regular.ttf");
+}
+html {
+  height: 100%;
+  font-family: Blinker;
+}
+
+body {
+  background-color: #12141C;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/*
+=============================================
+CENTRALIZA ELEMENTOS NA VERTICAL E HORIZONTAL
+=============================================
+*/
+.d-flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
