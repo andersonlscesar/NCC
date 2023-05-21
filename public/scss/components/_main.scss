@@ -1,0 +1,28 @@
+@use '../variables/index.scss' as var;
+
+/*
+==============================
+INFORMATIONS ABOUT THE PROFILE
+==============================
+*/
+
+.profile {
+    padding: 1rem;
+    background-color: var.$secondary-color-light;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+
+    &__name {
+        color: var.$text-color;
+    }
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

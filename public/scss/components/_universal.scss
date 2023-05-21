@@ -1,0 +1,5 @@
+@use '../variables/index.scss' as var;
+
+.link {
+  @include var.link-style;
+}

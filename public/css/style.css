@@ -1,5 +1,5 @@
 #header {
-  background-color: rgb(30, 31, 35);
+  background-color: #12141C;
 }
 #header .nav {
   display: flex;
@@ -21,7 +21,7 @@
   outline: none;
   background-color: #020510;
   color: #C0CDFA;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: box-shadow 0.3s ease-in-out;
 }
 #header .nav__form .input:focus {
@@ -37,6 +37,37 @@
   padding: 0 1rem;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
+}
+
+/*
+==============================
+INFORMATIONS ABOUT THE PROFILE
+==============================
+*/
+.profile {
+  padding: 1rem;
+  background-color: #12141C;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.profile__name {
+  color: #C0CDFA;
+}
+.profile__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: #478DC9;
 }
 
 * {
@@ -55,7 +86,7 @@ html {
 }
 
 body {
-  background-color: #12141C;
+  background-color: #20273A;
 }
 
 .container {
@@ -65,12 +96,14 @@ body {
 }
 
 /*
-=============================================
-CENTRALIZA ELEMENTOS NA VERTICAL E HORIZONTAL
-=============================================
+===========
+GRID GERAL
+===========
 */
-.d-flex {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: 250px 750px 300px;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

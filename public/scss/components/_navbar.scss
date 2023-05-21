@@ -17,14 +17,7 @@
             display: flex;
 
             .input {
-                width: 100%;
-                padding: 1rem;
-                border: transparent;
-                border-radius: 10px 0 0 10px;
-                outline: none;
-                background-color: var.$input-color;
-                color: var.$text-color;
-                font-size: 1.2rem;
+                @include var.input-style;
                 transition: box-shadow .3s ease-in-out;
 
                 &:focus {
