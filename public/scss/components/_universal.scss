@@ -3,3 +3,8 @@
 .link {
   @include var.link-style;
 }
+
+.input {
+    @include var.input-style(10px, 10px, 10px, 10px);
+    
+}

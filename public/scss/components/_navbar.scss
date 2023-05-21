@@ -17,15 +17,11 @@
             display: flex;
 
             .input {
-                @include var.input-style;
+                @include var.input-style(10px, 0, 0, 10px);
                 transition: box-shadow .3s ease-in-out;
 
                 &:focus {
                     box-shadow: 0px 0px 0px 1px var.$text-color;
-                }
-
-                &::placeholder {
-                    color: var.$text-color;
                 }
             }
 

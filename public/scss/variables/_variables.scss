@@ -8,11 +8,11 @@ $link-color: #478DC9;
 
 
 
-@mixin input-style() {
+@mixin input-style($btr: 0, $btl: 0, $bbl: 0, $bbr: 0 ) {
     width: 100%;
     padding: 1rem;
     border: transparent;
-    border-radius: 10px 0 0 10px;
+    border-radius: $btr $btl $bbl $bbr;
     outline: none;
     background-color: $input-color;
     color: $text-color;

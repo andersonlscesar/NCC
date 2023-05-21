@@ -26,3 +26,23 @@ INFORMATIONS ABOUT THE PROFILE
         object-fit: cover;
     }
 }
+
+
+/*
+==============================
+INFORMATIONS ABOUT THE POSTS
+==============================
+*/
+
+.posts {
+    &__release {
+        background-color: var.$secondary-color-light;
+        padding: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+
+        input {
+            cursor: pointer;
+        }
+    }
+}

@@ -16,13 +16,14 @@
 
     {{-- Posts --}}
     <div class="posts">
-
+        <div class="posts__release">
+            <input type="text" class="input" placeholder="Publique algo ... " disabled="true">
+        </div>
     </div>
     {{-- end Posts --}}
 
     {{-- News --}}
     <aside class="news">
-
     </aside>
     {{-- end News --}}
 
